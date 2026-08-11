@@ -8,7 +8,7 @@
 
 #$ -N visiomode-generate-regressors
 
-#$ -l h_rt=12:30:00
+#$ -l h_rt=00:30:00
 #$ -l h_rss=4G
 
 #$ -hold_jid stagein
