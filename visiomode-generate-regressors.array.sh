@@ -24,4 +24,4 @@ OUTBOX="/exports/eddie/scratch/$USER/outbox"
 # SGE_TASK_ID will go from 1 to the number of files when we submit an array job
 F=`sed -n ${SGE_TASK_ID}p < $1`
 
-visiomode-analysis session --with-regressors --regressor-timestamps "${F}" --out-dir "$OUTBOX" "${F/_meso*_timestamps.txt/.json}"
+visiomode-analysis session --with-regressors --regressor-timestamps "${F}" --output-dir "$OUTBOX" "${F/_meso*_timestamps.txt/.json}"
