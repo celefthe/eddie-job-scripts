@@ -10,7 +10,6 @@
 
 #$ -l h_rt=12:30:00
 #$ -l h_rss=4G
-#$ -pe sharedmem 8
 
 #$ -hold_jid stagein
 
