@@ -25,6 +25,6 @@ OUTBOX="/exports/eddie/scratch/$USER/outbox"
 # SGE_TASK_ID will go from 1 to the number of files when we submit an array job
 F=`sed -n ${SGE_TASK_ID}p < $1`
 
-mesoscopy align --behaviour-json "${F/_meso*.h5/.json}" -o "$OUTBOX" "$F"
+mesoscopy align --behaviour-json "${F/_meso*.h5/.json}" "$F"
 mesoscopy process regions -o "$OUTBOX" "$F"
 mesoscopy process peri-event -o "$OUTBOX" "${F/.h5/_regions.csv}" "$F" 
