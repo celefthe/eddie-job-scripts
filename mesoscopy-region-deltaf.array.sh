@@ -29,4 +29,4 @@ mesoscopy align --behaviour-json "${F/_meso*.h5/.json}" "$F"
 mesoscopy process regions -o "$OUTBOX" "$F"
 
 F_out="${F/inbox/outbox}"
-mesoscopy process peri-event -o "$OUTBOX" "${F_out/.h5/_regions.csv}" "$F" 
+mesoscopy process peri-event -o "$OUTBOX" "${F_out/.h5/_regions.csv}" "${F/behaviour-*.h5/behaviour-gonogo_trials.csv}"
