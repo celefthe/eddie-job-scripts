@@ -18,7 +18,7 @@ trap 'exit 99' sigusr1 sigusr2 sigterm
 # Source path on Eddie. It should be on the fast Eddie HPC filesystem, starting with one of:
 # /exports/csce/eddie, /exports/chss/eddie, /exports/cmvm/eddie, /exports/igmm/eddie or /exports/eddie/scratch, 
 #
-SOURCE="/exports/eddie/scratch/$USER/outbox"
+SOURCE="/exports/eddie/scratch/$USER/outbox/*"
 DESTINATION="/exports/cmvm/datastore/sbms/groups/INCR-DuguidLab/rett-sensorimotor-learning/inbox/" 
 
 mkdir -p ${DESTINATION}
