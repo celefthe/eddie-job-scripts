@@ -27,4 +27,6 @@ F=`sed -n ${SGE_TASK_ID}p < $1`
 
 mesoscopy align --behaviour-json "${F/_meso*.h5/.json}" "$F"
 mesoscopy process regions -o "$OUTBOX" "$F"
-mesoscopy process peri-event -o "$OUTBOX" "${F/.h5/_regions.csv}" "$F" 
+
+F_out="${F/inbox/outbox}"
+mesoscopy process peri-event -o "$OUTBOX" "${F_out/.h5/_regions.csv}" "$F" 
