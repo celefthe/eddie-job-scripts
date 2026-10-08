@@ -9,8 +9,8 @@
 #$ -N mesoscopy-connectivity
 
 #$ -l h_rt=01:30:00
-#$ -l h_rss=4G
-#$ -pe sharedmem 2
+#$ -l h_rss=1G
+#$ -pe sharedmem 8
 
 #$ -hold_jid stagein
 
