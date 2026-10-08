@@ -14,9 +14,6 @@
 
 #$ -hold_jid stagein
 
-#$ -m eas
-#$ -M Constantinos.Eleftheriou@ed.ac.uk
-
 #$ -o logs/mesoscopydeltaf_$JOB_ID.log
 #$ -e logs/mesoscopydeltaf_$JOB_ID.errors
 PATH="$PATH:~/.local/bin/"
