@@ -20,4 +20,4 @@ PATH="$PATH:~/.local/bin/"
 OUTBOX="/exports/eddie/scratch/$USER/outbox"
 
 # SGE_TASK_ID will go from 1 to the number of files when we submit an array job
-mesoscopy process metrics --baseline -1 0 --post 4.0 -o "$OUTBOX" "{F}"
+mesoscopy process metrics --smooth 1 -o "$OUTBOX" "{F}"
