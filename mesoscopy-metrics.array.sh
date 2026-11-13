@@ -19,5 +19,7 @@
 PATH="$PATH:~/.local/bin/"
 OUTBOX="/exports/eddie/scratch/$USER/outbox"
 
-# SGE_TASK_ID will go from 1 to the number of files when we submit an array job
+# SGE_TASK_ID will go from 1 to the number of files when we submit an array 
+F=`sed -n ${SGE_TASK_ID}p < $1`
+
 mesoscopy process metrics --smooth 1 -o "$OUTBOX" "$F"
